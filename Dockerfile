@@ -4,7 +4,7 @@
 # (https://docs.docker.com/build/building/multi-stage/)
 
 # Stage 1 (to create a "build" image, ~360MB)
-FROM eclipse-temurin:17-jdk-alpine AS builder
+FROM eclipse-temurin:11-jdk-alpine AS builder
 # smoke test to verify if java is available
 RUN java -version
 
